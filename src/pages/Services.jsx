@@ -12,8 +12,8 @@ export default function OurServices() {
       }}
     >
       {/* Content Wrapper */}
-      <Box sx={{ px: { xs: 3, sm: 4, md: 8, lg: 12 }, width: "100%", mt: "15vh" }}>
-        <Stack spacing={4} maxWidth={"80%"}>
+      <Box sx={{ px: { xs: 3, md: 8,}, width: "100%", mt: "5vh" }}>
+        <Stack spacing={4} maxWidth={"100%"}>
           <Typography
             variant="h1"
             sx={{
@@ -31,11 +31,11 @@ export default function OurServices() {
         <Stack spacing={4} sx={{mt: "10vh"}}>
           
 
-          <Typography variant="h4" sx={{ color: "#b5b5b5", fontWeight: 700, }}>AI & Machine Learning Solutions</Typography>
+          <Typography variant="h4" sx={{ color: "#b5b5b5", fontSize: { xs: "1.5rem", md: "2rem" }, fontWeight: 700, }}>AI & Machine Learning Solutions</Typography>
         
           <Typography
             sx={{
-              lineHeight: 1.9,
+              lineHeight: 1.5,
               color: "#c7c7c7",
               fontSize: { xs: "1rem", md: "1.1rem" },
               maxWidth: "900px",
@@ -67,11 +67,11 @@ export default function OurServices() {
         <Stack spacing={4} sx={{mt: "10vh"}}>
           
 
-          <Typography variant="h4" sx={{ color: "#b5b5b5", fontWeight: 700, }}>Workflow Automation & Process Intelligence</Typography>
+          <Typography variant="h4" sx={{ color: "#b5b5b5", fontSize: { xs: "1.5rem", md: "2rem" }, fontWeight: 700, }}>Workflow Automation & Process Intelligence</Typography>
         
           <Typography
             sx={{
-              lineHeight: 1.9,
+              lineHeight: 1.5,
               color: "#c7c7c7",
               fontSize: { xs: "1rem", md: "1.1rem" },
               maxWidth: "900px",
@@ -93,11 +93,11 @@ export default function OurServices() {
         <Stack spacing={4} sx={{mt: "10vh"}}>
           
 
-          <Typography variant="h4" sx={{ color: "#b5b5b5", fontWeight: 700, }}>Document Intelligence & OCR Systems</Typography>
+          <Typography variant="h4" sx={{ color: "#b5b5b5", fontSize: { xs: "1.5rem", md: "2rem" }, fontWeight: 700, }}>Document Intelligence & OCR Systems</Typography>
         
           <Typography
             sx={{
-              lineHeight: 1.9,
+              lineHeight: 1.5,
               color: "#c7c7c7",
               fontSize: { xs: "1rem", md: "1.1rem" },
               maxWidth: "900px",
@@ -119,11 +119,11 @@ export default function OurServices() {
         <Stack spacing={4} sx={{mt: "10vh"}}>
           
 
-          <Typography variant="h4" sx={{ color: "#b5b5b5", fontWeight: 700, }}>Data Platforms & Dashboards</Typography>
+          <Typography variant="h4" sx={{ color: "#b5b5b5", fontSize: { xs: "1.5rem", md: "2rem" }, fontWeight: 700, }}>Data Platforms & Dashboards</Typography>
         
           <Typography
             sx={{
-              lineHeight: 1.9,
+              lineHeight: 1.5,
               color: "#c7c7c7",
               fontSize: { xs: "1rem", md: "1.1rem" },
               maxWidth: "900px",
@@ -145,11 +145,11 @@ export default function OurServices() {
         <Stack spacing={4} sx={{mt: "10vh"}}>
           
 
-          <Typography variant="h4" sx={{ color: "#b5b5b5", fontWeight: 700, }}>Product Optimization & System Modernization</Typography>
+          <Typography variant="h4" sx={{ color: "#b5b5b5", fontSize: { xs: "1.5rem", md: "2rem" }, fontWeight: 700, }}>Product Optimization & System Modernization</Typography>
         
           <Typography
             sx={{
-              lineHeight: 1.9,
+              lineHeight: 1.5,
               color: "#c7c7c7",
               fontSize: { xs: "1rem", md: "1.1rem" },
               maxWidth: "900px",
@@ -171,11 +171,11 @@ export default function OurServices() {
         <Stack spacing={4} sx={{mt: "10vh"}}>
           
 
-          <Typography variant="h4" sx={{ color: "#b5b5b5", fontWeight: 700, }}>Government AI: Why It Matters for India</Typography>
+          <Typography variant="h4" sx={{ color: "#b5b5b5", fontSize: { xs: "1.5rem", md: "2rem" }, fontWeight: 700, }}>Government AI: Why It Matters for India</Typography>
         
           <Typography
             sx={{
-              lineHeight: 1.9,
+              lineHeight: 1.5,
               color: "#c7c7c7",
               fontSize: { xs: "1rem", md: "1.1rem" },
               maxWidth: "900px",

@@ -15,9 +15,8 @@ export default function About() {
       <Box
         sx={{
           width: "100%",
-          maxWidth: 1280,
           pt: "10vh",
-          px: { xs: 3, sm: 4, md: 8, lg: 12 },
+          px: { xs: 3, md: 8, },
         }}
       >
         <Stack spacing={4}>

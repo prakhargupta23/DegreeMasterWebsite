@@ -21,8 +21,6 @@ export default function Contact() {
         maxWidth: "90vw",
         display: "flex",
         alignItems: "center",
-        background:
-          "radial-gradient(circle at top, rgba(255,0,90,0.25), transparent 60%)",
       }}
     >
       {/* PAGE WIDTH WRAPPER */}

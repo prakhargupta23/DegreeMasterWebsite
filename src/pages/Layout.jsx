@@ -33,7 +33,8 @@ export default function Layout({ children }) {
             backgroundImage:
           "radial-gradient(circle at top, rgba(255,0,90,0.25), transparent 60%)",
             backgroundAttachment: "fixed",
-            backgroundSize: "100% 100vh",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
         }}
     >
 
@@ -142,7 +143,7 @@ export default function Layout({ children }) {
       {/* PAGE CONTENT */}
         <Box
         sx={{
-            width: { xs: "90%", md: "100%" },
+            width: { xs: "80%", md: "80%" },
             minHeight: "100vh",
             mx: "auto",
             px: { xs: 3, sm: 4, md: 8, lg: 12 },
