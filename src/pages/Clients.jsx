@@ -7,6 +7,7 @@ export default function Clients() {
         py: { xs: 8, md: 14 },
         width: "100%",
         display: "flex",
+        alignItems: "center",
         justifyContent: "center",
       }}
     >
@@ -24,7 +25,7 @@ export default function Clients() {
             variant="h2"
             sx={{
               fontWeight: 800,
-              fontSize: { xs: "2rem", md: "2.6rem" },
+              fontSize: { xs: "1.6rem", md: "2.6rem" },
             }}
           >
             Our Work & Clients

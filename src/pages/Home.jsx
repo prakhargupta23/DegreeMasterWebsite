@@ -15,12 +15,12 @@ export default function Home() {
       }}
     >
       <Box sx={{ px: { xs: 3, sm: 4, md: 8, lg: 12 }, width: "100%", mt: "15vh" }}>
-        <Stack spacing={4} maxWidth={"80%"}>
-          <Typography variant="h2" sx={{ fontWeight: 900, lineHeight: 1.05 }}>
+        <Stack spacing={4} maxWidth={"100%"}>
+          <Typography variant="h2" sx={{ fontWeight: 800, lineHeight: 1.05, fontSize: { xs: "1.6rem", md: "auto" } }}>
             Building Production Grade AI for Government & Institutions
           </Typography>
 
-          <Typography variant="h6" sx={{ color: "#b5b5b5" }}>
+          <Typography variant="h6" sx={{ color: "#b5b5b5",fontSize: { xs: "1rem", md: "auto" } }}>
             DegreeMaster.ai is a mission driven AI consulting and product company focused on designing and deploying production ready technology solutions for government organizations and large institutions. We work at the intersection of artificial intelligence, data engineering, and real world public sector workflows—where outcomes matter more than experiments.<br/><br/>
 Our solutions help government departments improve operational efficiency, reduce errors, enhance transparency, and make better data driven decisions at scale. From AI powered pension systems and expenditure intelligence to workflow automation and document intelligence platforms, we build technology that directly impacts governance outcomes and citizen services.<br/><br/>
 Founded by IIT/IIM alumni and serial entrepreneurs, DegreeMaster.ai brings deep experience in building scalable products, navigating complex stakeholder environments, and delivering systems that function reliably in real world government settings.

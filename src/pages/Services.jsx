@@ -18,7 +18,7 @@ export default function OurServices() {
             variant="h1"
             sx={{
               fontWeight: 800,
-              fontSize: { xs: "2rem", md: "2.6rem" },
+              fontSize: { xs: "1.6rem", md: "2.6rem" },
               display: "flex",
               alignItems: "center",
               gap: 1.5,

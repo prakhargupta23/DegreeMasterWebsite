@@ -25,7 +25,7 @@ export default function About() {
             variant="h2"
             sx={{
               fontWeight: 800,
-              fontSize: { xs: "2rem", md: "2.6rem" },
+              fontSize: { xs: "1.6rem", md: "2.6rem" },
             }}
           >
             Who We Are
@@ -55,7 +55,7 @@ Our team comprises IIT and IIM alumni, experienced engineers, data scientists, a
             variant="h2"
             sx={{
               fontWeight: 800,
-              fontSize: { xs: "2rem", md: "2.6rem" },
+              fontSize: { xs: "1.6rem", md: "2.6rem" },
             }}
           >
             Our Mission
@@ -93,7 +93,7 @@ We believe AI, when designed responsibly and deployed correctly, can be a game c
             variant="h2"
             sx={{
               fontWeight: 800,
-              fontSize: { xs: "2rem", md: "2.6rem" },
+              fontSize: { xs: "1.6rem", md: "2.6rem" },
             }}
           >
             Our Philosophy
@@ -123,7 +123,7 @@ We believe AI, when designed responsibly and deployed correctly, can be a game c
             variant="h2"
             sx={{
               fontWeight: 800,
-              fontSize: { xs: "2rem", md: "2.6rem" },
+              fontSize: { xs: "1.6rem", md: "2.6rem" },
             }}
           >
             Why DegreeMaster.ai
@@ -154,7 +154,7 @@ We believe AI, when designed responsibly and deployed correctly, can be a game c
             variant="h2"
             sx={{
               fontWeight: 800,
-              fontSize: { xs: "2rem", md: "2.6rem" },
+              fontSize: { xs: "1.6rem", md: "2.6rem" },
             }}
           >
             Our Vision

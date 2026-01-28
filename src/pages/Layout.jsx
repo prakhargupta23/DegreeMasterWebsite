@@ -1,7 +1,25 @@
-import { AppBar, Toolbar, Typography, Box, Button, Stack } from "@mui/material";
+import { AppBar, Toolbar, Typography, Box, Button, Stack, IconButton, Drawer, MenuItem } from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export default function Layout({ children }) {
+  const [drawerOpen, setDrawerOpen] = useState(false);
+
+  const toggleDrawer = (open) => (event) => {
+    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+      return;
+    }
+    setDrawerOpen(open);
+  };
+
+  const navLinks = [
+    { label: "About", path: "/about" },
+    { label: "Services", path: "/services" },
+    { label: "Clients", path: "/clients" },
+    { label: "Contact", path: "/contact" },
+  ];
+
   return (
     <Box
         sx={{
@@ -46,7 +64,8 @@ export default function Layout({ children }) {
                 </Link>
             </Typography>
 
-            <Stack direction="row" spacing={2} alignItems="center">
+            {/* Desktop Navigation */}
+            <Stack direction="row" spacing={2} alignItems="center" sx={{ display: { xs: "none", md: "flex" } }}>
                 <Button component={Link} to="/about" color="inherit">
                 About
                 </Button>
@@ -69,18 +88,65 @@ export default function Layout({ children }) {
                 Contact
                 </Button>
             </Stack>
+
+            {/* Mobile Menu Button */}
+            <IconButton
+              color="inherit"
+              aria-label="menu"
+              onClick={toggleDrawer(true)}
+              sx={{ display: { xs: "flex", md: "none" } }}
+            >
+              <MenuIcon />
+            </IconButton>
             </Box>
         </Toolbar>
       </AppBar>
 
+      {/* Mobile Drawer */}
+      <Drawer
+        anchor="right"
+        open={drawerOpen}
+        onClose={toggleDrawer(false)}
+        sx={{
+          "& .MuiDrawer-paper": {
+            background: "rgba(2,3,10,0.95)",
+            backdropFilter: "blur(12px)",
+            borderLeft: "1px solid rgba(255,255,255,0.08)",
+          },
+        }}
+      >
+        <Box
+          sx={{
+            width: 250,
+            pt: 2,
+          }}
+        >
+          {navLinks.map((link) => (
+            <MenuItem
+              key={link.path}
+              component={Link}
+              to={link.path}
+              onClick={toggleDrawer(false)}
+              sx={{
+                color: "#e6e6e6",
+                py: 1.5,
+                px: 3,
+              }}
+            >
+              {link.label}
+            </MenuItem>
+          ))}
+        </Box>
+      </Drawer>
 
       {/* PAGE CONTENT */}
         <Box
         sx={{
-            width: "100%",
+            width: { xs: "90%", md: "100%" },
             minHeight: "100vh",
             mx: "auto",
             px: { xs: 3, sm: 4, md: 8, lg: 12 },
+            pr: { xs: 5 },
         }}
         >
         {children}
