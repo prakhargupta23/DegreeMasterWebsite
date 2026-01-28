@@ -12,6 +12,10 @@ export default function Layout({ children }) {
             color: "#e6e6e6",
             fontFamily: "Inter, system-ui",
             overflowX: "hidden",     // prevent horizontal bleed
+            backgroundImage:
+          "radial-gradient(circle at top, rgba(255,0,90,0.25), transparent 60%)",
+            backgroundAttachment: "fixed",
+            backgroundSize: "100% 100vh",
         }}
     >
 
@@ -46,6 +50,12 @@ export default function Layout({ children }) {
                 <Button component={Link} to="/about" color="inherit">
                 About
                 </Button>
+                <Button component={Link} to="/services" color="inherit">
+                Services
+                </Button>
+                <Button component={Link} to="/clients" color="inherit">
+                Clients
+                </Button>
 
                 <Button
                 component={Link}
@@ -61,13 +71,14 @@ export default function Layout({ children }) {
             </Stack>
             </Box>
         </Toolbar>
-        </AppBar>
+      </AppBar>
 
 
       {/* PAGE CONTENT */}
         <Box
         sx={{
             width: "100%",
+            minHeight: "100vh",
             mx: "auto",
             px: { xs: 3, sm: 4, md: 8, lg: 12 },
         }}
@@ -85,7 +96,7 @@ export default function Layout({ children }) {
         }}
       >
         <Typography variant="body2" sx={{ color: "#9e9e9e" }}>
-          © {new Date().getFullYear()} Degreemaster Live · Concerts · Experiences
+          © {new Date().getFullYear()} Degreemaster Technologies Pvt. Ltd.
         </Typography>
       </Box>
     </Box>

@@ -1,9 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
-import Events from "./pages/Events";
+import OurServices from "./pages/Services";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Clients from "./pages/Clients";
+
 
 export default function App() {
   return (
@@ -11,9 +13,10 @@ export default function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/events" element={<Events />} />
+          <Route path="/services" element={<OurServices />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/clients" element={<Clients />} />
         </Routes>
       </Layout>
     </BrowserRouter>
