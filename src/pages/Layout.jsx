@@ -24,20 +24,33 @@ export default function Layout({ children }) {
     <Box
         sx={{
             minHeight: "100vh",
-            width: "100vw",          // 🔥 THIS IS KEY
+            width: "100vw",
             maxWidth: "100vw",
-            background: "#000", // no dark bg
+            background: "#000",
             color: "#e6e6e6",
             fontFamily: "Inter, system-ui",
-            overflowX: "hidden",     // prevent horizontal bleed
-            backgroundImage:
-          "radial-gradient(circle at top, rgba(255,0,90,0.25), transparent 60%)",
-            backgroundAttachment: "fixed",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
+            overflowX: "hidden",
+            position: "relative",
         }}
     >
+      {/* Fixed Gradient Background */}
+      <Box
+        sx={{
+          position: "fixed",
+          top: 0,
+          left: 0,
+          width: "100vw",
+          height: "100vh",
+          backgroundImage:
+            "radial-gradient(circle at top, rgba(255,0,90,0.25), transparent 60%)",
+          backgroundRepeat: "no-repeat",
+          pointerEvents: "none",
+          zIndex: 0,
+        }}
+      />
 
+      {/* Content with higher z-index */}
+      <Box sx={{ position: "relative", zIndex: 1 }}>
       <AppBar
         position="sticky"
         elevation={0}
@@ -165,6 +178,7 @@ export default function Layout({ children }) {
         <Typography variant="body2" sx={{ color: "#9e9e9e" }}>
           © {new Date().getFullYear()} Degreemaster Technologies Pvt. Ltd.
         </Typography>
+      </Box>
       </Box>
     </Box>
   );
